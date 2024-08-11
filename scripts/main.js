@@ -17,17 +17,16 @@ document.getElementById('createSessionForm').addEventListener('submit', function
           instructor: formData.get('expertName')
       };
 
-      // Store session details in localStorage
+      
       localStorage.setItem('sessionDetails', JSON.stringify(sessionDetails));
 
-      // Show a prompt
+      
       alert('Session added.');
 
-      // Redirect to the added session page
+      
       window.location.href = 'verified.html';
   };
 
-  // Read the image file as a Data URL
   if (imageFile) {
       reader.readAsDataURL(imageFile);
   }
